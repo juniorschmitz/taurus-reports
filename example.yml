@@ -28,7 +28,8 @@ scenarios:
 reporting:
 - module: passfail
   criteria:
-    Response Time Too High: avg-rt>300ms
+    - Tempo de resposta medio muito alto: avg-rt>300ms for 2s, stop as failed
+    - Existem Requests com status code de falha: fail>0% 
 - module: junit-xml
   filename: reports/report.xml
   data-source: pass-fail
