@@ -1,7 +1,7 @@
 execution:
 - concurrency: 100
-  ramp-up: 30s
-  hold-for: 1m
+  ramp-up: 15s
+  hold-for: 30s
   scenario: siteblaze
   criteria: 
     - fail>0%
@@ -30,5 +30,5 @@ reporting:
   criteria:
     Response Time Too High: avg-rt>300ms
 - module: junit-xml
-  filename: /reports/report.xml
+  filename: reports/report.xml
   data-source: pass-fail
