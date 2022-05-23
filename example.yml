@@ -30,5 +30,5 @@ reporting:
   criteria:
     Response Time Too High: avg-rt>300ms
 - module: junit-xml
-  filename: report.xml
+  filename: /reports/report.xml
   data-source: pass-fail
