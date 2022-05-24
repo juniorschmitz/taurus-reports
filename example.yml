@@ -34,3 +34,11 @@ reporting:
 - module: junit-xml
   filename: reports/report.xml
   data-source: pass-fail
+
+- module: final-stats
+  summary: true
+  percentiles: true
+  test-duration: true
+  failed-labels: false
+  dump-xml: reports/xml-jenkins.xml
+  dump-csv: reports/csv-jenkins.csv
